@@ -1,0 +1,1 @@
+<?phpinterface IBaseController {    	public static function actionsTitles();}

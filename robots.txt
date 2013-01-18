@@ -1,0 +1,3 @@
+User-agent: Yandex
+Sitemap: http://vavilova-13.ru/sitemaps.xml
+Disallow: /*_openstatDisallow: /*from=adwordsDisallow: /*utm_sourceHost: vavilova-13.ruUser-agent: GooglebotDisallow: /*_openstatDisallow: /*from=adwordsDisallow: /*utm_sourceUser-agent: *Disallow:

@@ -1,0 +1,3 @@
+'<lang:[a-z]{2}>/services'                          => 'services/service/index',
+'<lang:[a-z]{2}>/services/<id:\d+>'                 => 'services/service/view',
+'<lang:[a-z]{2}>/services/section/<section_id:\d+>' => 'services/service/SectionServices'

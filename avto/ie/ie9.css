@@ -1,0 +1,53 @@
+
+    .slider-wrap{
+     padding:22px 0px 0px 0px;
+    }
+    .stripNavL, .stripNavR {
+     top:55px;
+    }
+	
+	.phone{
+		font-size:17px;
+	}
+	
+	.index_news_title{
+		margin:4px 0px 0px 0px;
+		padding:0px;
+	}
+	
+	.date_orange {
+		width:70px;
+	}
+	
+	.articleIE{
+		margin:3px 0px 0px 0px !important;
+	}
+	
+	.plus .plus_title{
+	width: 221px;
+	height: 45px;
+	color: white;
+	font-family: pfd;
+	font-size: 30px;
+	padding: 13px 0px 0px 25px;
+	margin: -25px 0px 0px 18px;
+	background: url("../img/plus.jpg") no-repeat;
+	}
+	
+
+	
+		 .stripViewer .panelContainer .panel .wrapper{
+		height:80px !important;
+	} 
+	
+	.slider-wrap{
+		margin: 0px 0px 0px;
+	}
+ 
+  .we_work{
+	position: absolute;
+  margin: 6px 0px 0px 40px;
+  padding: 7px 0px 0px 17px;
+  }
+  
+  

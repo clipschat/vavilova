@@ -1,0 +1,198 @@
+
+  p#cross-links { text-align: center
+}
+  p#cross-links { border-bottom: 1px solid #ccc; margin-bottom: 30px; padding-bottom: 30px 
+}
+
+  .stripViewer .panelContainer .panel ul {
+  text-align: left;
+  margin: 0 15px 0 30px;
+  }
+  .slider-wrap { 
+  margin: 30px 0px 0px 0px;
+  position: relative;
+  width: 100%;
+  }
+  .csw {width: 100%; height: 100px; background: #fff; overflow: scroll}
+  .csw .loading {margin: 200px 0 300px 0; text-align: center}
+ .stripViewer { 
+  position: relative;
+  overflow: hidden; 
+  border: 2px solid #fee281;
+  margin: auto;
+  width: 925px; 
+  height: 100px;
+  clear: both;
+  background: #fff;
+  
+  }
+  .stripViewer .panelContainer {
+  position: relative;
+  left: 0; top: 0;
+  width: 100%;
+  list-style-type: none;
+  }
+  .stripViewer .panelContainer .panel { 
+  float:left;
+  height: 100px;
+  position: relative;
+  width: 885px; 
+  margin: 0px auto;
+
+  }
+  
+  .stripViewer .panelContainer .panel .wrapper:first-child{
+	padding: 10px 22px 10px 43px;
+	} 
+	
+	
+  .stripViewer .panelContainer .panel .wrapper { 
+ padding: 10px 22px 10px 23px;
+ width: 54px;
+ height: 103px;
+ display: table-cell;
+ vertical-align: middle;
+}
+
+
+ * html .wrapper img {  /* хак для ие6 */
+ display: block;
+ z-index: expression( /* оптимизированный expression, который сработает только при загрузке страницы */
+ runtimeStyle.zIndex = 1,
+ this == ((200/2)-parseInt(offsetHeight)/2) <0 ? style.marginTop="0" : style.marginTop=(200/2)-(parseInt(offsetHeight)/2) +'px');
+}
+ *:first-child+html .wrapper img {  /* хак для ие7 */
+ display: block;
+ z-index: expression(
+ runtimeStyle.zIndex = 1,
+ this == ((200/2)-parseInt(offsetHeight)/2) <0 ? style.marginTop="0" : style.marginTop=(200/2)-(parseInt(offsetHeight)/2) +'px');
+}
+  
+  
+  
+  
+@media all and (-webkit-min-device-pixel-ratio:0) {
+  
+  .stripViewer .panelContainer .panel .wrapper:first-child{
+	padding: 0px 22px 10px 43px;
+	} 
+	
+	
+  .stripViewer .panelContainer .panel .wrapper { 
+ padding: 0px 22px 10px 23px;
+ width: 54px;
+ height: 103px;
+ display: table-cell;
+ vertical-align: middle;
+}
+
+}
+
+
+
+
+    .stripViewer .panelContainer .panel .wrapper img{
+	 margin: 0px 44px 0px 0px;
+	 float: left;
+	 display:table-cell; vertical-align:middle;
+	} 
+	.stripViewer .panelContainer .panel .wrapper img:last-child{
+	margin: 0px 0px 0px 0px;
+	}
+  .stripNav { 
+  display: none;
+  margin: auto;
+border: none;
+  }
+  .stripNav ul { 
+  list-style: none;
+border: none;
+  }
+  .stripNav ul li {
+  float: left;
+  margin-right: 2px; 
+border: none;
+  }
+  .stripNav a { 
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  background: #c6e3ff;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0 15px;
+border: none;
+  }
+  .stripNav li.tab1 a { background: #60f }
+  .stripNav li.tab2 a { background: #60c }
+  .stripNav li.tab3 a { background: #63f }
+  .stripNav li.tab4 a { background: #63c }
+  .stripNav li.tab5 a { background: #00e }
+  .stripNav li a:hover {
+  background: #333;
+  }
+  .stripNav li a.current {
+  background: #000;
+  color: #fff;
+border: none;
+  }
+  .stripNavL, .stripNavR { 
+  position: absolute;
+  top: 30px;
+  text-indent: -9000em;
+  z-index: 1000;
+border: none;
+  }
+ 
+  .stripNavL a, .stripNavR a {
+  display: block;
+  height: 40px;
+  width: 40px;
+border: none;
+  }
+  .stripNavL {
+  left: -5px;
+border: none;
+  }
+  .stripNavR {
+  right: -5px;
+border: none;
+  }
+  .stripNavL {
+  background: url("arrow_left.png") no-repeat center;
+border: none;
+  } 
+  .stripNavL:hover {
+  background: url("arrow_left_hover.png") no-repeat center;
+border: none;
+  }
+  .stripNavR {
+  background: url("arrow_right.png") no-repeat center;
+border: none;
+  }
+  .stripNavR :hover {
+  background: url("arrow_right_hover.png") no-repeat center;
+border: none;
+  }
+  
+  .we_work{
+  width: 183px;
+  height: 26px;
+  background: #d5330d;
+  position: absolute;
+  margin: 15px 0px 0px 40px;
+  padding: 4px 0px 0px 17px;
+  z-index: 100;
+  color: white;
+  font-size: 20px;
+  font-family: "pfd";
+  }
+  
+  
+  
+
+  
+  
+  
