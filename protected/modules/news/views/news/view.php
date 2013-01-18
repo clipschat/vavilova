@@ -14,24 +14,15 @@ if (!empty($description)){
 $title=MetaTag::getTag($model,'title')->static_value;
 $this->pageTitle=empty($title)? $model->title.' - Автопрофи':$title;
 ?>
-    <div class="block_page">
-        <div class="way_page">
-            <a href="/">Главная</a>
-            » <a href="/site/allnews/">Новости</a>
-            » <?=$model->title?></div>
-                <h1><?=$model->title?></h1>
-        <div class="text_page">
-            <?php echo $model->content; ?>
-        </div>
+<div class="content_about">
+
+    <div class="krohi">
+        <a href="">Главная</a>
+        » <a href="/site/allnews/">Новости</a>
+        » <span><?=$model->title?></span>
     </div>
-    <div class="block_page_right">
-        <div class="header_news">Новости компании</div>
-        <?php  foreach ($list as $new): ?>
-        <div class="text_news_date"><?= date('d.m.Y', strtotime($new->date)); ?></div>
-        <div class="text_news">
-            <a href="/site/news/?n=<?=$new->code?>"><?=$new->title?></a>
-        </div>
-        <?php endforeach; ?>
-        <a class="text_news" style="color: #C10E1F;" href="/site/allnews/">Все новости</a><br><br>
-    </div>
-    <div class="clear"></div>
+    <div class="orange_line_about"></div>
+
+    <h1 style="color:#2c2423"><?=$model->title?></h1>
+    <?php echo $model->content; ?>
+</div>

@@ -7,7 +7,7 @@
         } 
         ?>
         <li>
-            <a href="<?php echo array_shift(array_values($module['admin_menu'])); ?>">
+            <a href="<?php $values = array_values($module['admin_menu']); echo array_shift($values); ?>">
                 <?php echo $module['name']; ?>
             </a>
             <ul >

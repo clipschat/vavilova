@@ -14,15 +14,13 @@ if (!empty($description)){
 $title=MetaTag::getTag($service,'title')->static_value;
 $this->pageTitle=empty($title)? $service->title.' - Автопрофи':$title;
 ?>
-<?php $baseUrl = Yii::app()->baseUrl; ?>
-<div class="block_page">
-    <div class="way_page"><a href="">Главная</a> »
-        <a href="<?=$this->createUrl('/services/serviceSection/index')?>">Услуги</a>
-        » <a href="<?=$this->createUrl('/content/page/view/')?>/?p=<?=$service->section->code?>"><?=$service->section->name?></a>
-        » <?=$service->title?>
-    </div>            <h1><?=$service->title?></h1>
-    <div class="text_page">
-        <?=$service->text?>
-    </div>
+<div class="krohi">
+    <a href="">Главная</a> »
+    <a href="<?=$this->createUrl('/services/serviceSection/index')?>">Услуги</a>
+    <span>» <?=$service->title?></span>
 </div>
-<div class="clear"></div>
+<div class="orange_line_about"></div>
+
+<h1 style="color:#2c2423"><?=$service->title?></h1>
+
+        <?=$service->text?>

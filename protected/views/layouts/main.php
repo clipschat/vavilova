@@ -79,7 +79,7 @@
 <body>
 
 <div class="header_bg">
-    <div class="header">
+    <div id="header">
         <div class="header_inner">
             <div class="logo">
                 <a href=""><img src="/images/site/logo.png" alt=""/></a><br/>
@@ -93,6 +93,12 @@
                     Заказать
                     обратный звонок
                 </div>
+                <object name="callme" width="200" height="100" align="middle" style="display: none">
+                    <embed src="http://universe.uiscom.ru/media/flash/callme200x100.swf?h=dlgWawvOzPCVLqh_golgyy5ZeVIQ9V1lfghqNNdmCQgmfylvXHMueRttLagT5gek&color=green&prefix=russia&person=man&text=callme"
+                           width="200" height="100" quality="high" bgcolor="#ffffff" name="callme" align="middle"
+                           allowScriptAccess="always" type="application/x-shockwave-flash"
+                           pluginspage="http://www.adobe.com/go/getflashplayer"/>
+                </object>
             </a>
 
             <div class="tel">
@@ -113,12 +119,11 @@
 <div class="content">
     <div class="content_inner">
         <?= $content ?>
-        <div id="share_block">
+        <!--div id="share_block">
             <?= Setting::model()->getValue('share_block_code')?>
-        </div>
+        </div-->
     </div>
 </div>
-</body>
 
 
 <div class="footer">
@@ -130,5 +135,7 @@
         <div class="copyrite"><a href="http://www.kupitsite.ru" target="_blank">Создание web-сайтов</a>  – ООО <span>"Арт Проект"</span></div>
     </div>
 </div>
+
+</body>
 </html>
 

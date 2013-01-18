@@ -1,10 +1,9 @@
 <?php $this->beginContent('//layouts/main'); ?>
-<div class="content">
-    <div class="content_inner">
+<div class="content_top"></div>
+<div class="content_center">
         <?= $content ?>
-        <div id="share_block">
+        <!--div id="share_block">
             <?= Setting::model()->getValue('share_block_code')?>
-        </div>
-    </div>
+        </div-->
 </div>
 <?php $this->endContent(); ?>

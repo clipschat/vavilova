@@ -2,7 +2,7 @@
 
 abstract class BaseController extends CController implements IBaseController
 {
-    public $layout='//layouts/main';
+    public $layout='//layouts/column2';
 
     public $page_title;
 
