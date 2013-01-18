@@ -100,7 +100,9 @@
                 <div class="number"><?=Setting::model()->getValue('phone')?></div>
                 <div class="time"><?=Setting::model()->getValue('worktime'); //todo Не влазит, нужно в админке редактировать ?></div>
             </div>
-
+            <!--a href="/thanks" class="yellowlink">
+                Отзывы о техцентре "Автопрофи"
+            </a-->
         </div>
     </div>
 </div>
@@ -108,48 +110,25 @@
 
 <?php $this->widget('TopMenu'); ?>
 
-<div class="main_block_header_bg">
-    <div class="main_block_header">
-        <a href="/site/page/?p=price" class="yellowlink"><span class="icon_price">
-            <span></span><img src="<?=$baseUrl?>/images/site/arrow_yeloow.gif" align="absmiddle" border="0"></span>
-            Прайс-лист на все виды работ
-        </a>
-        <a href="/thanks" class="yellowlink"><span class="icon_price">
-            <span></span><img src="<?=$baseUrl?>/images/site/arrow_yeloow.gif" align="absmiddle" border="0"></span>
-            Отзывы о техцентре "Автопрофи"
-        </a>
+<div class="content">
+    <div class="content_inner">
+        <?= $content ?>
+        <div id="share_block">
+            <?= Setting::model()->getValue('share_block_code')?>
+        </div>
     </div>
-    <div class="main_block_header" align="right">
-
-    </div>
-    <div class="clear"></div>
-</div>
-<div class="main_block">
-    <?= $content ?>
-    <div id="share_block">
-        <?= Setting::model()->getValue('share_block_code')?>
-    </div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-    <div class="text_footer1">
-        © 2004 &ndash; <?= date('Y'); ?> «Автопрофи»<br>
-        OAO «Таксомоторный парк-12»<br>
-        <a href="/site/sitemap/">Карта сайта</a>
-    </div>
-    <div class="text_footer2">
-        Телефон: 8 (495) 225-90-30<br>
-        <?=Setting::model()->getValue('real_address')?><br>
-        <a href="/site/page/?p=kontakty">Схема проезда</a>
-    </div>
-    <div class="text_footer3">
-    </div>
-    <div class="text_copyright" align="right">
-        Сделано в ООО "Арт Проект"<br>
-        <a href="http://www.kupitsite.ru" target="_blank">Разработка автоматизированных систем управления</div>
-</div>
-<div class="clear"></div>
 </div>
 </body>
+
+
+<div class="footer">
+    <div class="footer_inner">
+        <div class="telephone">© ООО "Таксомоторный парк-12"
+            <span>8 (495) <b>225-90-30</b></span>
+        </div>
+        <div class="adress"><a href=""><img src="img/adress_img.png" alt="" /></a>Технический центр «Автопрофи» - ул. Вавилова, д.13<?php //echo Setting::model()->getValue('real_address'); todo Вставить сюда настройки?></div>
+        <div class="copyrite"><a href="http://www.kupitsite.ru" target="_blank">Создание web-сайтов</a>  – ООО <span>"Арт Проект"</span></div>
+    </div>
+</div>
 </html>
 
