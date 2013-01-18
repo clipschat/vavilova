@@ -8,21 +8,21 @@
     <?php
     $baseUrl = Yii::app()->request->baseUrl;
     $cs = Yii::app()->clientScript;
-    $cs->registerCssFile($baseUrl . '/avto/style.css');
-    $cs->registerCssFile($baseUrl . '/avto/js/mini-slider.css');
-    $cs->registerCssFile($baseUrl . '/avto/js/tinyslider.css');
-    $cs->registerCssFile($baseUrl . '/avto/js/coin-slider-styles.css');
+    $cs->registerCssFile($baseUrl . '/css/style.css');
+    $cs->registerCssFile($baseUrl . '/js/mini-slider.css');
+    $cs->registerCssFile($baseUrl . '/js/tinyslider.css');
+    $cs->registerCssFile($baseUrl . '/js/coin-slider-styles.css');
     $cs->registerCoreScript('jquery');
     ?>
     <?= "<!-- $baseUrl -->" ?>
     <LINK type=text/css charset=utf-8 rel=stylesheet>
 
 
-    <script type="text/javascript" src="/avto/js/tinyslider.js"></script>
+    <script type="text/javascript" src="/js/tinyslider.js"></script>
 
-    <script src="/avto/js/jquery-easing.1.2.pack.js" type="text/javascript"></script>
-    <script src="/avto/js/jquery-easing-compatibility.1.2.pack.js" type="text/javascript"></script>
-    <script src="/avto/js/coda-slider.1.1.1.pack.js" type="text/javascript"></script>
+    <script src="/js/jquery-easing.1.2.pack.js" type="text/javascript"></script>
+    <script src="/js/jquery-easing-compatibility.1.2.pack.js" type="text/javascript"></script>
+    <script src="/js/coda-slider.1.1.1.pack.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(window).bind("load", function () {
             jQuery("div#slider1").codaSlider()
@@ -31,8 +31,8 @@
     </script>
 
     <!--[if IE]>
-    <script type="text/javascript" src="/avto/Font/cufon-yui.js"></script>
-    <script src="/avto/Font/PFD_500-PFD_500.font.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/css/Font/cufon-yui.js"></script>
+    <script src="/css/Font/PFD_500-PFD_500.font.js" type="text/javascript"></script>
     <script type="text/javascript">
         Cufon.set("fontSize", "14px");
         Cufon.replace('.logo', { fontFamily:'PFD' });
@@ -49,10 +49,10 @@
     <![endif]-->
 
     <!--[if IE 8]>
-    <link rel="stylesheet" href="/avto/ie/ie8.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/ie/ie8.css" type="text/css"/>
     <![endif]-->
     <!--[if IE 9]>
-    <link rel="stylesheet" href="/avto/ie/ie9.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/ie/ie9.css" type="text/css"/>
     <![endif]-->
 
 
@@ -82,7 +82,7 @@
     <div class="header">
         <div class="header_inner">
             <div class="logo">
-                <a href=""><img src="img/logo.png" alt=""/></a><br/>
+                <a href=""><img src="/images/site/logo.png" alt=""/></a><br/>
                 <span><?=Setting::model()->getValue('toptext')?></span>
             </div>
 
@@ -126,7 +126,7 @@
         <div class="telephone">© ООО "Таксомоторный парк-12"
             <span>8 (495) <b>225-90-30</b></span>
         </div>
-        <div class="adress"><a href=""><img src="img/adress_img.png" alt="" /></a>Технический центр «Автопрофи» - ул. Вавилова, д.13<?php //echo Setting::model()->getValue('real_address'); todo Вставить сюда настройки?></div>
+        <div class="adress"><a href="http://vavilova-13.ru"><img src="/images/site/adress_img.png" alt="" /></a>Технический центр «Автопрофи» - ул. Вавилова, д.13<?php //echo Setting::model()->getValue('real_address'); todo Вставить сюда настройки?></div>
         <div class="copyrite"><a href="http://www.kupitsite.ru" target="_blank">Создание web-сайтов</a>  – ООО <span>"Арт Проект"</span></div>
     </div>
 </div>
